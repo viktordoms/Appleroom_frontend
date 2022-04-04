@@ -1,0 +1,50 @@
+{
+	"parserOptions": {
+		"ecmaVersion": 2020,
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		"sourceType": "module"
+	},
+
+	"settings": {
+		"react": {
+			"version": "detect"
+		},
+		"import/resolver": {
+			"node": {
+				"paths": ["src"],
+				"extensions": [".js", ".jsx", ".ts", ".tsx"]
+			}
+		}
+	},
+	"env": {
+		"browser": true,
+		"node": true
+	},
+	"plugins": ["react"],
+	"rules": {
+		"react/jsx-no-bind": [
+			"error",
+			{
+				"allowArrowFunctions": true,
+				"allowBind": false,
+				"ignoreRefs": true
+			}
+		],
+		"react/no-did-update-set-state": "error",
+		"react/no-unknown-property": "error",
+		"react/no-unused-prop-types": "error",
+		"react/prop-types": "error",
+		"react/react-in-jsx-scope": "error",
+		"no-console": "off"
+	},
+	"extends": [
+		"eslint:recommended",
+		"plugin:react/recommended",
+		"plugin:import/errors",
+		"plugin:import/warnings",
+		"plugin:react-hooks/recommended",
+		"plugin:jsx-a11y/recommended"
+	]
+}
