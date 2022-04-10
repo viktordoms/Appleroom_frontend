@@ -1,17 +1,17 @@
 import React from 'react'
 
 import './header.scss'
-import HeaderTopline from "./elements/Header_topline";
-import HeaderMain from "./elements/Header _main";
-import HeaderMainNav from "./elements/Header_main_nav";
+import Topline from "./elements/Topline";
+import Main from "./elements/Main";
+import MainNav from "./elements/Main_nav";
 
 function Header() {
 
     return (
         <header className='header'>
-            <HeaderTopline/>
-            <HeaderMain/>
-            <HeaderMainNav/>
+            <Topline/>
+            <Main/>
+            <MainNav/>
         </header>
     )
 }
