@@ -1,17 +1,12 @@
 import React from 'react'
+import HomeSlider from "../Components/Home_slider/Home_slider";
 
-import Testpage from './Testpage'
-import axiosInstance from '../axios'
+
 
 function Home() {
-	axiosInstance.get(`/user/all-profiles/`).then((res) => {
-		console.log(res)
-		console.log(res.data)
-	})
-
 	return (
 		<div>
-			<Testpage />
+			<HomeSlider/>
 		</div>
 	)
 }
