@@ -1,47 +1,49 @@
 import React from 'react';
-import {Swiper, SwiperSlide} from "swiper/react";
-import {Navigation, Pagination, Autoplay} from "swiper";
 
-import 'swiper/swiper.scss'
-import 'swiper/components/pagination/pagination.scss'
-import 'swiper/components/navigation/navigation.scss'
-import 'swiper/components/autoplay'
+import Slider from "react-slick";
 
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import './home_slider.scss';
 
 
 function HomeSlider() {
+    const settings = {
+        className: "center",
+        centerMode: true,
+        dots: true,
+        infinite: true,
+        centerPadding: "320px",
+        slidesToShow: 1,
+        speed: 1000,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        pauseOnHover: true,
+    };
     return (
-            <Swiper
-                modules={[Navigation,Pagination, Autoplay]}
-                autoplay={{
-                    delay: 25,
-                }}
-                slidesPerView={2}
-                centeredSlides={true}
-                spaceBetween={35}
-                pagination
-                navigation
+            <Slider
+                {...settings}
                 className='slider-container'>
-                <SwiperSlide className="slider__slide">
+                <div className='slider__slide'>
                     <img src='images/slider_img_01.webp' alt=''/>
-                </SwiperSlide>
-                <SwiperSlide className="slider__slide">
+                </div>
+                <div className='slider__slide'>
                     <img src='images/slider_img_02.webp' alt=''/>
-                </SwiperSlide>
-                <SwiperSlide className="slider__slide">
+                </div>
+                <div className='slider__slide'>
                     <img src='images/slider_img_03.webp' alt=''/>
-                </SwiperSlide>
-                <SwiperSlide className="slider__slide">
+                </div>
+                <div className='slider__slide'>
                     <img src='images/slider_img_04.webp' alt=''/>
-                </SwiperSlide>
-                <SwiperSlide className="slider__slide">
+                </div>
+                <div className='slider__slide'>
                     <img src='images/slider_img_05.webp' alt=''/>
-                </SwiperSlide>
-                <SwiperSlide className="slider__slide">
+                </div>
+                <div className='slider__slide'>
                     <img src='images/slider_img_06.webp' alt=''/>
-                </SwiperSlide>
-            </Swiper>
+                </div>
+            </Slider>
+
     )
 }
 
