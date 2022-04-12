@@ -16,7 +16,7 @@
       text-transform: uppercase;
       letter-spacing: 2px;
     }
-    .best-offers__nav-new-by{
+    .best-offers__nav-new-used{
       display: flex;
       justify-content: center;
       align-items: center;
@@ -26,15 +26,15 @@
       font-weight: 700;
       margin: -15px 0 15px;
       letter-spacing: 1px;
-      .nav-new-by__item{
+      .nav-new-used__item{
         text-decoration: none;
-        .nav-new-by__link{
+        .nav-new-used__link{
           display: block;
           color: #ef456a;
           border-radius: 6px;
           padding: 0.5rem 1rem;
         }
-        .active_new-by{
+        .active_new-used{
           background-color: #ef456a;
           color: white;
         }
