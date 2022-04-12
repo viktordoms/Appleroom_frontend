@@ -1,10 +1,12 @@
 import React from 'react'
 
+import BestOffers from "../Components/best_offers/Best_offers";
 
 function Home() {
-
 	return (
-			<div></div>
+			<div>
+				<BestOffers/>
+			</div>
 	)
 }
 
